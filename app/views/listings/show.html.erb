@@ -20,7 +20,7 @@
   <p>
     <strong>Image:</strong>
     <br>
-    <%= image_tag @listing.photo %>
+    <%= image_tag @listing.photo.variant(resize: '500x500') %>
   </p>
 <% end %>
 
