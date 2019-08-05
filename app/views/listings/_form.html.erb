@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, placeholder:"Object Name" %>
+    <%= form.text_field :name, placeholder:"Object Name", :required => true %>
   </div>
 
   <div class="field">
@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, :required => true  %>
   </div>
 
   <div class="field">
     <%= form.label :photo %>
-    <%= form.file_field :photo %>
+    <%= form.file_field :photo, :required => true  %>
   </div>
   
 

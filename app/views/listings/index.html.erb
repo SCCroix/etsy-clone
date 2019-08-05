@@ -6,7 +6,7 @@
     <% @listings.each do |listing| %>
       <div class="col-md-3">
         <% if listing.photo.attached? %>
-          <%= image_tag listing.photo.variant(resize: '200x200') %>
+          <%= image_tag listing.photo.variant(combine_options: { resize: "200x200>", extent: "200x200", gravity: "center"}) %>
         <% else %>
           <%= image_tag '/uploads/listing/image/default.jpg', size: "200x200" %>
         <% end %>
