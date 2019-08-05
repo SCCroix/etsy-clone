@@ -1,3 +1,3 @@
 class Listing < ApplicationRecord
-    mount_uploader :image, ImageUploader
+    has_one_attached :photo
 end

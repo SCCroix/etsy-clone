@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<%= image_tag @listing.image_url %>
 
 <p>
   <strong>Name:</strong>
@@ -17,5 +16,15 @@
   <%= @listing.price %>
 </p>
 
+<% if @listing.photo.attached? %>
+  <p>
+    <strong>Image:</strong>
+    <br>
+    <%= image_tag @listing.photo %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>
+
+

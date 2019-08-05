@@ -15,7 +15,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
+gem 'carrierwave'#, '>= 2.0.0.rc', '< 3.0'
+# gem 'carrierwave-dropbox'#, '~> 1.2', '>= 1.2.1'
+gem 'fog-aws'
+gem "aws-sdk-s3", require: false
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -29,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.8'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
